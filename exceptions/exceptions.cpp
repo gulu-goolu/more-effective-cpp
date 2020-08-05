@@ -38,7 +38,7 @@ void try_01() {
 void try_02() {
   try {
     DerivedObj obj(1, 2);
-    auto& tc = obj;
+    Obj& tc = obj;
     throw tc;  // 抛出的是 Obj
   } catch (DerivedObj& d) {
     printf("DerivedObj exception\n");
